@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="./images/myicon.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./customstyle.css" />
+    <title>Tanya's Portfolio</title>
+    <script type="text/javascript">
+      function monthDiff(d1, d2) {
+        var months;
+        months = (d2.getFullYear() - d1.getFullYear()) * 12;
+        months -= d1.getMonth();
+        months += d2.getMonth();
+        return months <= 0 ? 0 : months;
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="mp-0">
+      <div class="navbar">
+        <div class="text-center gradient">
+          <div
+            class="navbar_side row right font block margin-right primary-color"
+          >
+            <div class="padding-right navbar_subheading"><a href="aboutme" class="primary-color">Aboutme</a></div>
+            <div class="padding-right navbar_subheading"><a href="mywork" class="primary-color">MyWork</a></div>
+            <div><a href="contacts" class="primary-color navbar_subheading">Contacts</a></div>
+          </div>
+          <div class="navbar_head center">
+            <h1>H</h1>
+            <h1>E</h1>
+            <h1>L</h1>
+            <h1>L</h1>
+            <h1>O</h1>
+            <img src="./images/girl.png" class="width height" />
+          </div>
+        </div>
+        <div class="margin-left">
+          <h2 class="about_me terary-color" >About Me</h2>
+          <p class="secondary-color">
+            Past relevant experience with a demonstrated history of working in
+            the HTML and CSS and Vue.js. Strong hands-on CSS3, SCSS in design
+            and development. Also have experience in Vuetify along with Material
+            design. I am also passionate about designing using Figma that are
+            capable of creating basic to high structures. Grabbing new tech as
+            fast as possible, sharing on the go and learn as new
+            standards/technologies emerge.
+          </p>
+        </div>
+        <div
+          class="
+            block
+            secondary-background-color
+            primary-color
+            max_width
+            height
+            border
+          "
+        >
+          <h2 class="about_me margin">Work experience</h2>
+          <div>
+            <ul>
+              <li>
+                <hgroup>
+                  <div class="font">
+                    Wipro Limited
+                    <p class="work_subheading">Project Engineer</p>
+                    <p class="work_subheading">
+                      June 2019 -- Present .
+                      <div id="monthDiff"></div>
+                      <script>                       
+                        document.getElementById("monthDiff").innerHTML = (end_date.getFullYear() - start_date.getFullYear())*12 + (end_date.getMonth() - start_date.getMonth());
+                      </script>
+                    </p>
+                    <p class="work_subheading">Pune, Maharastra India</p>
+                  </div>
+                </hgroup>
+              </li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer"></div>
+      </div>
+    </div>
+  </body>
+</html>
